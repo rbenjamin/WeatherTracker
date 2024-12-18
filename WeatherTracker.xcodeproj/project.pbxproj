@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B549EDD92D134A0C00F29272 /* Readme.md in Resources */ = {isa = PBXBuildFile; fileRef = B549EDD82D134A0700F29272 /* Readme.md */; };
+		B549EDD92D134A0C00F29272 /* README in Resources */ = {isa = PBXBuildFile; fileRef = B549EDD82D134A0700F29272 /* README */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +31,7 @@
 		B513DC452D11D028009A90F6 /* WeatherTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B513DC552D11D02B009A90F6 /* WeatherTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeatherTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B513DC5F2D11D02B009A90F6 /* WeatherTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeatherTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B549EDD82D134A0700F29272 /* Readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; };
+		B549EDD82D134A0700F29272 /* README */ = {isa = PBXFileReference; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -102,7 +102,7 @@
 		B513DC3C2D11D028009A90F6 = {
 			isa = PBXGroup;
 			children = (
-				B549EDD82D134A0700F29272 /* Readme.md */,
+				B549EDD82D134A0700F29272 /* README */,
 				B513DC472D11D028009A90F6 /* WeatherTracker */,
 				B513DC582D11D02B009A90F6 /* WeatherTrackerTests */,
 				B513DC622D11D02B009A90F6 /* WeatherTrackerUITests */,
@@ -242,7 +242,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B549EDD92D134A0C00F29272 /* Readme.md in Resources */,
+				B549EDD92D134A0C00F29272 /* README in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
