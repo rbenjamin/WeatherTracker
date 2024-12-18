@@ -1,0 +1,15 @@
+//
+//  Readme.md
+//  WeatherTracker
+//
+//  Created by Ben Davis on 12/18/24.
+//
+
+
+#iOS WeatheAPI Take Home Test#
+
+Instructions:
+    - Open Networking/Connection.swift and input API Key into the struct WeatherAPIConnection's _apiKey_ constant.
+    - You may need to update the Signing to run on device, otherwise, the app should work from here.
+    - Note: The instructions didn't specify which OS to target, so I targeted iOS 18.0.
+

@@ -10,8 +10,18 @@ import Testing
 
 struct WeatherTrackerTests {
 
-    @Test func example() async throws {
-        // Write your test here and use APIs like `#expect(...)` to check expected conditions.
+    @Test func testDownloadWeather() async throws {
+        let connection = ConnectionManager(connection: WeatherAPIConnection())
+        let coordinates = PreviewData().location.coordinate
+        let weather = try await connection.weather(for: coordinates)
+        #expect(weather != nil, "Weather data is nil for London coordinates.")
+    }
+    
+    @Test func testSearchLocation() async throws {
+        let connection = ConnectionManager(connection: WeatherAPIConnection())
+        let results = try await connection.search(for: "London")
+        #expect(results != nil, "Connection location search results is nil!")
+        #expect(results?.isEmpty == false, "Connection location search results is empty.")
     }
 
 }
