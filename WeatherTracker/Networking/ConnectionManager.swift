@@ -166,7 +166,6 @@ extension ConnectionManager {
         
         let weather = try self.jsonDecoder.decode(WeatherData.self,
                                                   from: data)
-        print("icon: \(weather.currentWeather.conditions.icon)")
         return weather
     }
     
@@ -179,9 +178,9 @@ extension ConnectionManager {
                                                 mimeType: preferredType) else {
             return nil
         }
-        if let asString = String(data: data, encoding: .utf8) {
-            print(asString)
-        }
+//        if let asString = String(data: data, encoding: .utf8) {
+//            print(asString)
+//        }
         
         let locations = try self.jsonDecoder.decode([WeatherLocation].self, from: data)
         return locations

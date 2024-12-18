@@ -51,6 +51,8 @@ struct LocationSearchList: View {
     }
 }
 
-//#Preview {
-//    LocationsList(connection: ConnectionManager(connection: WeatherAPIConnection()), selectedLocation: .constant(nil), searchText: .constant(""))
-//}
+#Preview {
+    LocationSearchList(locations: [],
+                       searchText: .constant(""),
+                       selectedLocation: .constant(nil))
+}

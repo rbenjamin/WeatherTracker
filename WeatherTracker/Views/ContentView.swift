@@ -147,6 +147,7 @@ struct ContentView: View {
     var body: some View {
         NavigationStack {
             VStack {
+                // Chose to use a TextField here (rather than .searchable api) so I could track field focus via @FocusState.
                 GroupBox {
                     HStack {
                         TextField("Search Location", text: $viewModel.searchText,

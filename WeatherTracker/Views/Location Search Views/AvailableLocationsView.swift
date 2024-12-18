@@ -54,6 +54,9 @@ struct AvailableLocationsView: View {
     }
 }
 
-//#Preview {
-//    AvailableLocationsView(locations: .constant([]), currentWeather: .constant(nil), connection: ConnectionManager(connection: WeatherAPIConnection()))
-//}
+#Preview {
+    AvailableLocationsView(locations: .constant([]),
+                           currentWeather: .constant(nil),
+                           searchFocus: FocusState().projectedValue,
+                           connection: .init(connection: .init()))
+}
